@@ -1,0 +1,507 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 24px;
+}
+.header span {
+  color: blue;
+}
+.nav {
+  background-color: black;
+  overflow: hidden;
+}
+.nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nav a:hover {
+  background-color: #575757;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.main-content {
+  width: 70%;
+}
+.sidebar {
+  width: 25%;
+  background-color: #2c3e50;
+  padding: 20px;
+  color: white;
+}
+.sidebar input,
+.sidebar textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+.sidebar input[type="file"] {
+  background-color: #ccc;
+  color: black;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #333;
+  color: white;
+}
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+.container4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+}
+.text-section {
+  max-width: 50%;
+  margin-left: 20px;
+}
+.text-section h1 {
+  color: #2b6cb0;
+  font-size: 36px;
+  margin: 0;
+}
+.text-section p {
+  color: #4a5568;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.image-section .main-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.image-section .main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image-section .small-images {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.image-section .small-images .image {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.image-section .small-images .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.background-circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.background-circles .circle {
+  position: absolute;
+  border-radius: 50%;
+}
+.background-circles .circle.blue {
+  width: 20px;
+  height: 20px;
+  background-color: #2b6cb0;
+  top: 20%;
+  left: 70%;
+}
+.background-circles .circle.orange {
+  width: 15px;
+  height: 15px;
+  background-color: #ed8936;
+  top: 50%;
+  left: 80%;
+}
+.background-circles .circle.light-blue {
+  width: 50px;
+  height: 50px;
+  background-color: #ebf8ff;
+  top: 10%;
+  left: 10%;
+}
+.container1 {
+  text-align: center;
+  padding: 50px 20px;
+}
+.title {
+  font-size: 36px;
+  color: #1a73e8;
+  margin-bottom: 20px;
+}
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.service {
+  width: 200px;
+}
+.service i {
+  font-size: 40px;
+  color: #1a73e8;
+  margin-bottom: 10px;
+}
+.service h3 {
+  font-size: 20px;
+  color: #1a73e8;
+  margin-bottom: 10px;
+}
+.service p {
+  font-size: 14px;
+  color: #666666;
+}
+.images1 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.image1 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.image .overlay::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #ff6f00;
+}
+.image .overlay::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #1a73e8;
+}
+
+.container2 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.about-us,
+.our-projects {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about-us h2,
+.our-projects h2 {
+  color: #007bff;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.about-us p,
+.our-projects p {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+.about-us button,
+.project button {
+  background-color: transparent;
+  border: 1px solid #007bff;
+  color: #007bff;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.about-us button:hover,
+.project button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+.projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.project {
+  background-color: #fff;
+  width: 23%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+.project img {
+  width: 100%;
+  height: auto;
+}
+.project h3 {
+  color: #007bff;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+.project p {
+  color: #666;
+  font-size: 0.9em;
+  margin: 10px 0;
+}
+.project button {
+  background-color: #ff6600;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.project button:hover {
+  background-color: #e65c00;
+}
+
+.container4 {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.happy-clients {
+  padding: 50px 0;
+}
+.happy-clients h2 {
+  color: #007bff;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.client-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.client-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  text-align: left;
+}
+.client-card img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.client-card h3 {
+  font-size: 1.2em;
+  margin: 10px 0 5px;
+}
+.client-card p {
+  font-size: 0.9em;
+  color: #666;
+}
+.client-card span {
+  display: block;
+  font-size: 0.8em;
+  color: #999;
+}
+.footer {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 0;
+}
+.footer .container4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer .container4 div {
+  margin: 10px;
+}
+.footer .container4 a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.footer .container4 input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.footer .container4 button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0056b3;
+  color: #fff;
+  cursor: pointer;
+}
+.footer .container4 button:hover {
+  background-color: #004494;
+}
+.footer-bottom {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+.footer-bottom a {
+  color: #fff;
+  margin: 0 5px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  background-color: lightgray;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar logo */
+.navbar-logo {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  color: darkblue;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s;
+}
+
+.navbar-links a:hover {
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+
+button {
+  background-color: orange;
+  color: white;
+  border: none;
+}
+
+.form-img {
+  background-image: url(images/young-couple-examining-blueprints-with-real-estate-agent-while-buying-new-home\ 1.svg);
+  height: 40vw;
+  width: 100%;
+  background-size: cover;
+}
+
+form {
+  height: 30vw;
+  width: 25vw;
+  background-color: #182c4f;
+  opacity: 90%;
+  border-radius: 10px;
+  position: absolute;
+  right: 40px;
+  margin-top: 30px;
+}
+h1 {
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+input,
+select {
+  height: 3vw;
+  width: 90%;
+  border: 3px whitesmoke solid;
+  border-radius: 4px;
+  background-color: #c3d0e6;
+  display: flex;
+  justify-content: space-between;
+  margin-inline-start: 10px;
+}
+
+#submit {
+  width: 70%;
+  margin-left: 15%;
+  background-color: orange;
+}
+#submit:hover {
+  background-color: rgb(223, 126, 47);
+}
+
+.box2 {
+  height: 40vw;
+  width: 100%;
+  background-image: url(images/Ellipse\ 11.svg);
+  background-size: cover;
+}

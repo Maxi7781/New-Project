@@ -1,126 +1,311 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Panel</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+
+    <style></style>
   </head>
   <body>
-    <div class="header"><span>Admin</span> Panel</div>
-    <div class="nav">
-      <a href="#">DASHBOARD</a>
-      <a href="#">PROJECTS</a>
-      <a href="#">CLIENTS</a>
-      <a href="#">CONTACT FORMS</a>
-      <a href="#">SUBSCRIBERS</a>
-    </div>
-    <div class="container">
-      <div class="main-content">
-        <h2>Project Management</h2>
-        <table>
-          <tr>
-            <th>Project Name</th>
-            <th>Project Manager</th>
-            <th>Deadline</th>
-          </tr>
-          <tr>
-            <td>Skyline</td>
-            <td>Arda Guler</td>
-            <td>2024-04-31</td>
-          </tr>
-          <tr>
-            <td>Horizon Hub</td>
-            <td>Bellingham</td>
-            <td>2024-07-15</td>
-          </tr>
-        </table>
-        <h2>Client Management</h2>
-        <table>
-          <tr>
-            <th>Full Name</th>
-            <th>Email Address</th>
-            <th>Mobile Number</th>
-          </tr>
-          <tr>
-            <td>Rewman Smith</td>
-            <td>Rewsmith2@gmail.com</td>
-            <td>7485964512</td>
-          </tr>
-          <tr>
-            <td>Shijana Kayak</td>
-            <td>Kayakshijana@gmail.com</td>
-            <td>9858452361</td>
-          </tr>
-          <tr>
-            <td>Marry Freeman</td>
-            <td>Marryfr@gmail.com</td>
-            <td>7578514203</td>
-          </tr>
-        </table>
-        <h2>Contact Form Details</h2>
-        <table>
-          <tr>
-            <th>Full Name</th>
-            <th>Email Address</th>
-            <th>Phone Number</th>
-          </tr>
-          <tr>
-            <td>John Stones</td>
-            <td>Stonesjohn@gmail.com</td>
-            <td>8452145190</td>
-          </tr>
-          <tr>
-            <td>Jaydan Warner</td>
-            <td>Jaydan7@gmail.com</td>
-            <td>9861521035</td>
-          </tr>
-        </table>
-        <h2>Subscribed Email Addresses</h2>
-        <table>
-          <tr>
-            <th>Email Address</th>
-          </tr>
-          <tr>
-            <td>example1@gmail.com</td>
-          </tr>
-          <tr>
-            <td>example2@gmail.com</td>
-          </tr>
-        </table>
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"><img src="logo.svg" alt="" /></a>
+      <div class="navbar-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href=""><button>Contact Us</button></a>
       </div>
-      <div class="sidebar">
-        <h3>Client Image</h3>
-        <input type="file" />
-        <h3>Client Name</h3>
-        <input type="text" />
-        <h3>Client Description</h3>
-        <textarea rows="4"></textarea>
-        <h3>Client Designation</h3>
-        <input type="text" />
-        <button type="submit">Add Client</button>
-      </div>
-    </div>
-    <div class="sidebar">
-      <h3>Add New Project</h3>
-      <form id="projectForm">
-        <label for="projectImage">Project Image</label>
-        <input type="file" id="projectImage" name="projectImage" required />
-        <label for="projectName">Project Name</label>
-        <input type="text" id="projectName" name="projectName" required />
-        <label for="projectDescription">Project Description</label>
-        <textarea
-          id="projectDescription"
-          name="projectDescription"
-          rows="4"
+    </nav>
+
+    <div class="form-img">
+      <form action="get" class="form">
+        <h1>Get a free Consultation</h1>
+        <input type="text" placeholder="Full Name" id="text" required /> <br />
+        <input
+          type="tel"
+          placeholder="Enter Your Phone Number"
           required
-        ></textarea>
-        <button type="submit">Add Project</button>
+          id="number"
+        /><br />
+        <input type="email" placeholder="Enter your Email" required /><br />
+        <select name="City" id="city" required>
+          <option value="New Delhi">New Delhi</option>
+          <option value="NCR">NCR</option>
+          <option value="Lado Sarai">Lado Sarai</option>
+          <option value="RED Fort">RED Fort</option>
+          <option value="India Gate">India Gate</option>
+          <option value="Karol Bagh">Karol Bagh</option>
+        </select>
+        <br />
+        <input type="submit" value="Get Free Quote" id="submit" />
       </form>
     </div>
-    <script src="js/script.js"></script>
+    <div class="background-circles">
+      <div class="circle blue"></div>
+      <div class="circle orange"></div>
+      <div class="circle light-blue"></div>
+    </div>
+    <div class="container4">
+      <div class="text-section">
+        <h1>Not Your Average Realtor</h1>
+        <p>
+          Real estate services for savvy property investors, advanced marketing
+          design, and effective advertising to get homes sold quickly and for
+          top value.
+        </p>
+      </div>
+      <div class="image-section">
+        <div class="main-image">
+          <img
+            alt="Realtor holding a small house model"
+            height="250"
+            src="images/Ellipse 11.svg"
+            width="250"
+          />
+        </div>
+        <div class="small-images">
+          <div class="image">
+            <img
+              alt="Couple receiving keys from realtor"
+              height="120"
+              src="images/Ellipse 12.svg"
+              width="120"
+            />
+          </div>
+          <div class="image">
+            <img
+              alt="Realtor showing documents"
+              height="120"
+              src="images/Ellipse 13.svg"
+              width="120"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container1">
+      <div class="title">Why Choose Us?</div>
+      <div class="services">
+        <div class="service">
+          <i class="fas fa-home"> </i>
+          <h3>Potential ROI</h3>
+          <p>
+            Whether you are looking to buy a new property or renovate your
+            current home for sale, we will work you through potential returns
+            for projects.
+          </p>
+        </div>
+        <div class="service">
+          <i class="fas fa-lightbulb"> </i>
+          <h3>Design</h3>
+          <p>
+            Our in-house, award-winning team of designers will guide you through
+            your design options and recommend solutions to maximize the home
+            experience.
+          </p>
+        </div>
+        <div class="service">
+          <i class="fas fa-dollar-sign"> </i>
+          <h3>Marketing</h3>
+          <p>
+            Employing our industry experience and proven marketing strategies,
+            we will accompany you in taking your business to the next level.
+          </p>
+        </div>
+      </div>
+      <div class="images1">
+        <div class="image1">
+          <img
+            alt="Two people discussing in front of a house with a 'For Sale' sign"
+            height="200px"
+            src="images/pexels-brett-sayles-2881232.svg"
+            width="200px"
+          />
+          <div class="overlay"></div>
+        </div>
+        <div class="image2">
+          <img
+            alt="A group of people in a meeting, one person presenting"
+            height="300px"
+            src="images/pexels-andres-ayrton-6578391.svg"
+            width="300px"
+          />
+          <div class="overlay"></div>
+        </div>
+        <div class="image3">
+          <img
+            alt="A business meeting with three people, one person shaking hands"
+            height="400px"
+            src="images/pexels-fauxels-3182834.svg"
+            width="400px"
+          />
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container2">
+      <div class="about-us">
+        <h2>About Us</h2>
+        <p>
+          Fifteen years of experience in real estate, excellent customer service
+          and a commitment to work hard, listen and follow through. We provide
+          quality service to build relationships with clients and, more
+          importantly, maintain those relationships by communicating
+          effectively.
+        </p>
+        <button>LEARN MORE</button>
+      </div>
+      <div class="our-projects">
+        <h2>Our Projects</h2>
+        <p>
+          We know what buyers are looking for and suggest projects that will
+          bring clients top dollar for the sale of their homes.
+        </p>
+        <div class="projects">
+          <div class="project">
+            <img
+              alt="Consultation project image showing two people discussing in front of a house"
+              height="200"
+              src="images/pexels-brett-sayles-2881232.svg"
+              width="300"
+            />
+            <h3>Consultation</h3>
+            <p>Project details - location</p>
+            <button>READ MORE</button>
+          </div>
+          <div class="project">
+            <img
+              alt="Design project image showing a house under construction"
+              height="200px"
+              src="images/pex2.svg"
+              width="200px"
+            />
+            <h3>Design</h3>
+            <p>Project details - location</p>
+            <button>READ MORE</button>
+          </div>
+          <div class="project">
+            <img
+              alt="Marketing &amp; Design project image showing a well-designed house"
+              height="200px"
+              src="images/pex3.svg"
+              width="200px"
+            />
+            <h3>Marketing &amp; Design</h3>
+            <p>Project details - location</p>
+            <button>READ MORE</button>
+          </div>
+          <div class="project">
+            <img
+              alt="Consultation &amp; Marketing project image showing a person holding a 'SOLD' sign"
+              height="200px"
+              src="images/pexels-brett-sayles-2881232-1.svg"
+              width="200px"
+            />
+            <h3>Consultation &amp; Marketing</h3>
+            <p>Project details - location</p>
+            <button>READ MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="happy-clients">
+      <div class="container4">
+        <h2>Happy Client:</h2>
+        <div class="client-cards">
+          <div class="client-card">
+            <img
+              alt="Client photo of Rewman Smith"
+              height="50"
+              src="images/Ellipse 29.svg"
+              width="50"
+            />
+            <h3>Rewman Smith</h3>
+            <span> CEO, XYZ Inc. </span>
+            <p>
+              I am extremely satisfied with the service provided. Highly
+              recommend!
+            </p>
+          </div>
+          <div class="client-card">
+            <img
+              alt="Client photo of Shijana Kayak"
+              height="50"
+              src="images/Ellipse 28.svg"
+              width="50"
+            />
+            <h3>Shijana Kayak</h3>
+            <span> CTO, ABC Corp. </span>
+            <p>The team is very professional and the service is top-notch.</p>
+          </div>
+          <div class="client-card">
+            <img
+              alt="Client photo of John Lapons"
+              height="50"
+              src="images/Ellipse 31.svg"
+              width="50"
+            />
+            <h3>John Lapons</h3>
+            <span> COO, DEF Ltd. </span>
+            <p>Great experience! Will definitely use their service again.</p>
+          </div>
+          <div class="client-card">
+            <img
+              alt="Client photo of Marry Freeman"
+              height="50"
+              src="images/Ellipse 33.svg"
+              width="50"
+            />
+            <h3>Marry Freeman</h3>
+            <span> Manager, GHI Inc. </span>
+            <p>Very satisfied with the results. Highly recommend to others.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container4">
+        <div>
+          <a href="#"> Home </a>
+          <a href="#"> Services </a>
+          <a href="#"> Projects </a>
+          <a href="#"> Testimonials </a>
+          <a href="#"> Contact </a>
+        </div>
+        <div>
+          <input placeholder="Enter Email Address" type="email" />
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>All Rights Reserved 2023</p>
+      <img src="logo.svg" style="background-color: white" alt="" />
+      <div>
+        <a href="#">
+          <i class="fab fa-facebook-f"> </i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter"> </i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram"> </i>
+        </a>
+        <a href="#">
+          <i class="fab fa-linkedin-in"> </i>
+        </a>
+      </div>
+    </div>
   </body>
 </html>
