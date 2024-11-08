@@ -1,0 +1,126 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header"><span>Admin</span> Panel</div>
+    <div class="nav">
+      <a href="#">DASHBOARD</a>
+      <a href="#">PROJECTS</a>
+      <a href="#">CLIENTS</a>
+      <a href="#">CONTACT FORMS</a>
+      <a href="#">SUBSCRIBERS</a>
+    </div>
+    <div class="container">
+      <div class="main-content">
+        <h2>Project Management</h2>
+        <table>
+          <tr>
+            <th>Project Name</th>
+            <th>Project Manager</th>
+            <th>Deadline</th>
+          </tr>
+          <tr>
+            <td>Skyline</td>
+            <td>Arda Guler</td>
+            <td>2024-04-31</td>
+          </tr>
+          <tr>
+            <td>Horizon Hub</td>
+            <td>Bellingham</td>
+            <td>2024-07-15</td>
+          </tr>
+        </table>
+        <h2>Client Management</h2>
+        <table>
+          <tr>
+            <th>Full Name</th>
+            <th>Email Address</th>
+            <th>Mobile Number</th>
+          </tr>
+          <tr>
+            <td>Rewman Smith</td>
+            <td>Rewsmith2@gmail.com</td>
+            <td>7485964512</td>
+          </tr>
+          <tr>
+            <td>Shijana Kayak</td>
+            <td>Kayakshijana@gmail.com</td>
+            <td>9858452361</td>
+          </tr>
+          <tr>
+            <td>Marry Freeman</td>
+            <td>Marryfr@gmail.com</td>
+            <td>7578514203</td>
+          </tr>
+        </table>
+        <h2>Contact Form Details</h2>
+        <table>
+          <tr>
+            <th>Full Name</th>
+            <th>Email Address</th>
+            <th>Phone Number</th>
+          </tr>
+          <tr>
+            <td>John Stones</td>
+            <td>Stonesjohn@gmail.com</td>
+            <td>8452145190</td>
+          </tr>
+          <tr>
+            <td>Jaydan Warner</td>
+            <td>Jaydan7@gmail.com</td>
+            <td>9861521035</td>
+          </tr>
+        </table>
+        <h2>Subscribed Email Addresses</h2>
+        <table>
+          <tr>
+            <th>Email Address</th>
+          </tr>
+          <tr>
+            <td>example1@gmail.com</td>
+          </tr>
+          <tr>
+            <td>example2@gmail.com</td>
+          </tr>
+        </table>
+      </div>
+      <div class="sidebar">
+        <h3>Client Image</h3>
+        <input type="file" />
+        <h3>Client Name</h3>
+        <input type="text" />
+        <h3>Client Description</h3>
+        <textarea rows="4"></textarea>
+        <h3>Client Designation</h3>
+        <input type="text" />
+        <button type="submit">Add Client</button>
+      </div>
+    </div>
+    <div class="sidebar">
+      <h3>Add New Project</h3>
+      <form id="projectForm">
+        <label for="projectImage">Project Image</label>
+        <input type="file" id="projectImage" name="projectImage" required />
+        <label for="projectName">Project Name</label>
+        <input type="text" id="projectName" name="projectName" required />
+        <label for="projectDescription">Project Description</label>
+        <textarea
+          id="projectDescription"
+          name="projectDescription"
+          rows="4"
+          required
+        ></textarea>
+        <button type="submit">Add Project</button>
+      </form>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
